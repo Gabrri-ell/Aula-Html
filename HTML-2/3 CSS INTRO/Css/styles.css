@@ -1,0 +1,56 @@
+/* 4 external css */
+/*padding-bottom faz com que eu consiga rolar a tella mais para baixo fazendo com que eu consiga 
+cetralizar na tela o que eu quero , ou seja adiciona a barra de rolagem  */
+body {
+    padding-bottom: 900px;
+}
+
+h1 {
+    color: red  ;
+    font-size: 50px;
+
+}
+ 
+p {
+    color: royalblue;
+}
+
+/*Usando classses*/
+.paragrafo{
+    color: red;
+    background-color: yellow;
+    border-bottom: 1px solid blue;
+    padding: 5px;
+}
+
+
+/*Usando ID */
+#exclusive-title {
+    color: blue;
+    font-size: 30px;
+    border: aqua;
+   padding: 10px;
+    background-color: bisque;
+}
+
+h2 {
+    border: black;
+    padding: 10px;
+    color: red;
+    background-color: blueviolet;
+}
+
+.titulo {
+    color: brown;
+    background-color: yellow;
+    font-size: 45px;
+    border-bottom: 1px solid blue;
+
+}
+
+#algum-titulo {
+    color: darkblue;
+    font-size: 50px;
+    background-color: red;
+    border: 1px solid black;
+}
