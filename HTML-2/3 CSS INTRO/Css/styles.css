@@ -51,6 +51,67 @@ h2 {
 #algum-titulo {
     color: darkblue;
     font-size: 50px;
-    background-color: red;
+    background-color: rgb(221, 129, 129);
     border: 1px solid black;
+}
+
+/*Nome de cores
+a cor foi feita atráves de nome e utilizando uma diferença na tonalidade a partir de um layout do vscode*/
+
+.color-name {
+    color: rgb(135, 56, 56);
+}
+
+/*Hex/Hexadecimal
+padrão mais utilizado hoje 000 para dizer qual cor seria e fff letra para descrever a claridade da cor */
+
+.hex {
+    color: #55a398;
+
+}
+
+.hex-2 {
+    color: #06581d;
+}
+
+/*Aprofundando em hex*/
+
+.simple-hex {
+    color: #333;
+    }
+
+.simple-hex-2 {
+    color: #ae5;
+}
+
+/*Colocando as cores com rgb*/
+/*As cores de rgb se configuram atrás de 1 red- 2 green- 3 blue ( as cores seguem essa ordem que coloquei)
+e você utiliza um numero de 0 a 255 de cada com como uma mistura, 0 sendo a cor fraca 
+e 255 ela com maiss intensidade e de acordo com a intensidade tera uma cor variada*/
+
+.rgb {
+    color: rgb(0, 255, 0);
+}
+
+.mixed-rgb {
+    color: rgb(245, 198, 100);
+}
+
+/*Escolhendo a cor com o RGBA
+a diferença para o rgba é que o ultimo numero, muda quão opaca a letra fica por exemplo, 0 ela some por em 1 a cor fica intensa 
+e essa medida vai se 0 até 0.1,0.2,0.3... até 1*/
+
+.rgba {
+    color: rgba(222, 111, 159, 0.5);
+}
+
+
+/*HSL*/
+
+.hsl {
+    color: hsl(98, 10%, 6%);
+}
+
+.hsl2 {
+    color: hsl(80,  45%, 40%);
 }
