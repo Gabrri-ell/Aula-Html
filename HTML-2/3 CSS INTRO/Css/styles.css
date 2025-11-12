@@ -11,9 +11,9 @@ h1 {
 
 }
  
-p {
+/* p {
     color: royalblue;
-}
+} */
 
 /*Usando classses*/
 .paragrafo{
@@ -114,4 +114,125 @@ e essa medida vai se 0 até 0.1,0.2,0.3... até 1*/
 
 .hsl2 {
     color: hsl(80,  45%, 40%);
+}
+
+/*Backgound color*/
+
+.bg {
+    color: #000;
+    background-color: red;
+
+}
+
+.bg2 {
+    color: rgb(150, 50, 100);
+    background-color: #445563;
+    font-size: 46px;
+}
+
+/*Mundando a opacidade do background, a dois jeito com o comando '' opacity''
+porem ele deixa o texta e o backgound opacos, por outro lado se fazer quiser apaenas mudar a opacidade
+do fundo pode colocar a cor do fundo com o rgba, pois ele pode mudar a opacidade da cor escolhida
+ alterando apenas a cor do fundo */
+
+.opacity {
+    background-color: #1272c1;
+    opacity: 1;
+
+}
+
+.opacity2 {
+    background-color: #666;
+    color: black;
+    font-size: 45px;
+    opacity: 0.7;
+
+}
+
+.rgba-opacity {
+    color: #000;
+    background-color: rgba(155, 45, 155, 0.2);
+}
+
+/*Incluindo imagem no backgorund e deixando o texto */
+
+.bg-img {
+    background-image: url("../Css/img/vialactea1.jpeg");
+    color: #666;
+    padding: 10px;
+}
+
+.bg-img2 {
+    background-image: url("../Css/img/vialactea1.jpeg");
+    color: #fffefe;
+    
+}
+/*
+<!--21 Centralizando a imagem no backgound -->*/
+
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../Css/img/moon.jpg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+
+}
+
+/*height (altura ) and Width (largura*/
+
+.height-width {
+    height: 200px;
+    width: 100px;   
+    background-color: #444;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: #666;
+
+}
+/*Criando regra com e sem padding*/
+
+.without-padding {
+    background-color: #bc2f2f;
+    color: #000;
+}
+
+.padding {
+    padding: 20px;
+    background-color: yellow;
+}
+
+/*usando padding individuais*/
+
+.paddings-diferentes {
+    background-color: #444;
+    color: aliceblue;
+    padding-top: 5px;  /* parte Superior*/
+    padding-left: 10px;  /*lado esquerdo*/
+    padding-right: 20px;   /*lado direito*/
+    padding-bottom: 10px;    /*Parte inferior*/
+
+}
+/*o shorthand fez a mesma coisa que o anterior porem ele fez tudo na mesma regra
+sem precisar colocar um a um, padronizando tudo e reduzindo as linhas de codigo*/
+
+.shothand-paddings {
+    background-color: #555;
+    padding: 12px 15px 25px 55px;
+}
+
+.shothand-paddings-2 {
+    background-color: blue;
+    padding: 10px 20px;
+    /* padding: 10px 20px 10px 20px; -- ao fazer deste jeito que esta acima, o css ja 
+    entende que quer fazer um padrão, como se estivesse
+    colocando em ambas as laterais 10 px e em cima e em baixo 20 px em cada, ou seja você 
+    coloca metade e ele ja entende que quer manter o padrão para ambas as direções */
+
 }
