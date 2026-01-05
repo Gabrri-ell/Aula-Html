@@ -1,0 +1,36 @@
+body {
+    padding-bottom: 500px;
+}
+
+div {
+   margin-bottom: 10px;
+}
+
+/*uando o codigo esta sem o display block o label ficara assim :
+Nome :  ------------------
+se for com o display block ficara assim 
+Nome: 
+------------------------
+
+A caixa do input ficara abaixo do que descrevi que é o 'nome'*/
+
+div input,
+div label {
+    display: block;
+}
+
+.radio label,
+.radio input,
+.radio span {
+    display: inline-block;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px; /* Espaço entre os botões */
+}
+
+.botoes input {
+  display: inline-block;
+  
+}

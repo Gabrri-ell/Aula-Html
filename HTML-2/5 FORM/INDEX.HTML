@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+     ><link rel="stylesheet" href="Css/STYLES.CSS">
+</head>
+<!-- 1 Primeiro Formulario -->
+ <!-- 2 Atributos do formulario -->
+<body>
+    <h2>Formularios</h2>
+    <form action="register.php" method="get"> 
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+
+
+        <!-- 3 Atributo Name -->
+        <div>
+        <form >
+            <label>Idade</label>
+            <input type="text" name="age" >
+
+              <!-- 4 Abtibuto Label -->
+               <div>    
+                <label for="age">Idade 2</label>
+            
+                <input type="text" name="age" >
+
+               </div>
+            <!-- 6 Select -->
+             <!-- É usado quando você quer colocar as opções para as pessoas escolherem ao inves de 
+                     deixa-las escrever como normalmente fazer Tipo SP,RJ,RS e etc..
+                     Ne -->
+             <div>
+                <label for="job"></label>
+                <select name="job">
+                <option value="programador">Programador</option>
+                <option value="gestão">Gestão</option>
+                <option value="engenheiro">Engenheiro</option>
+                </select>
+             </div>
+
+             <!-- 7 Atributo Selected -->
+              <!-- Quando você coloca as opções e tem uma na qual tem mais saida
+               ou é a mais clicada, pode deixar como a primeira, facilicando ao usuario, ou usar
+               por exemplo na questão de termos de uso, onde você coloca o ''não '' no selected faendo com que 
+               a pesosa seja obrigada a muda e colocar sim, o que normalmente é obrigatorio para seguir -->
+              <div>
+
+            <label for="contract">Você Leu os termos e condições ?</label>
+            <select name="contract">
+            <option value="sim" >Sim</option>
+             <option value="não" selected >Não</option>
+            </select>
+
+              </div>
+
+
+              <!-- 8 Multiplas opções -->
+                    <!-- É usado quando você quer colocar as opções para as pessoas escolherem ao inves de 
+                     deixa-las escrever como normalmente fazer Tipo SP,RJ,RS e etc..
+                     Bdem parecida com a outra  ' select', porem esta eu posso selecionar mais de uma 
+                     opção se eu segura o control, ja outra é apenas uma opção -->
+              <div>
+                <label for="items" >Selecione os Itens desejados:</label>
+                <select name="items" multiple>
+                <option value="mmilho">Milho</option>
+                <option value="arroz">Arroz</option>
+                <option value="carne">Carne</option>    
+                </select>
+              </div>
+              <!-- 9 Textarea -->
+               <!--È usado quando você quer inserir um text, porem um texto grande como uma bio, por exemplo preci
+               ter mais espaço para texto e cols e rows, tratam do tamanho da caixa onde você ira adicionar
+               o texto -->
+
+              <div>
+                <label for="comment">Comentarios:</label>
+                <textarea name="comment" cols="50" rows="10"></textarea>
+              </div>
+              
+              <!-- 10 fildset e legend
+               o fildset faz um bloco, tipo uma div pporem a linha fica visivel para agrupar inputs por 
+               exemplo se eu quuiser juntar nome e sobre nome 
+               
+               ele diz no curso que o legend não é tão usado,normalmente é mais usado o input-->
+               <div>
+                <fieldset>
+                    <legend>Preencha as duas informações</legend>
+                    <label for="firstname">Nome></label>
+                    <input type="text" name="firstname">
+                    <label for="lastname" >Sobrenome</label>
+                    <input type="text" name="lastname">
+                </fieldset>
+               </div>
+
+
+               <!-- 11 datalist 
+                Esse modo faz  com que quando a pessoa comece a digitar a aparecça alternativas, facilicando
+                para o usuario ou caso não esteja nas opções você pode digitar a informação caso queira, outra coisa neste modo no 'option' o nome que coloca em value é o mesmo que aparece 
+                ao usuario -->
+
+               <div>
+                <label for="flavor">Escolha o sabor:</label>
+                <input type="text" list="flavors" name="flavor">
+                <datalist id="flavors">
+                    <option value="Cereja"></option>
+                    <option value="Morango"></option>
+                    <option value="Uva"></option>
+                    <option value="Chocolate"></option>
+                </datalist>
+               </div>
+
+               <!-- 12 Input para senhas--> 
+                <div>
+                    <label for="password" >Digite sua senha:</label>
+                    <input type="password" name="password">
+
+
+
+
+        <!-- 14 Radio botton-->
+
+            <div>
+                <label for="car_model">Escolhe o modelo do seu carro:</label>
+                <div class="radio">
+                    <input type="radio" value="bmw" name="car_model">
+                    <label for="bmw">BMW</label>
+                    <input type="radio" value="mercedes" name="car_model">
+                    <label for="bmw">mercedes</label>
+                    <input type="radio" value="audi" name="car_model">
+                    <label for="bmw">audi</label>
+                </div>
+
+            </div>
+
+
+
+    <!-- 15 CHECKBOX  -->
+<!-- Usado quando você querr dar a opção de mais de um
+ para funcionar de forma correto, sempre que for colocar o nome colocar dessa maneira "optionals[]" com o colchete na laeral como se fosse 
+ uma lista   -->
+
+<div>   
+    <label  class="optionals">Opções de carro:</label>
+    <div class="radio" >
+        <input type="checkbox" name="optionals[]" value="bitre">
+        <label for="bigtre">Pneus grandes</label>
+
+        <input type="checkbox" name="optionals[]" value="motorforte">
+        <label for="motorforte">Turbo</label>
+    </div>
+</div>
+
+
+        <!-- 16 Input data -->
+         <div >
+            <label for="birthday">Data de nascimento</label>
+            <input type="date" name="birthday">
+         </div>
+
+         <!-- 17 input de arquivos -->
+          <!-- Isso seria por eexemplo eu preciso enviar uma foto minha ou um pdf eu uso esse tipo de configuração -->
+
+         <div>
+            <label for="imagem"></label>
+            <input type="file" name="imagem">
+         </div>
+
+
+         <!-- 18 Input para numeros  de 0 a  9, e utiliza setas paras mudar-->
+          <!-- Normalmente o tipo text é mais utilizado, pois esse tipo aceita apenas numeros
+           e em um exemplo de você usar o cep ou cpf pode haver traço, fora que ele não aceita virgula por exemplo -->
+
+           <div>
+            <label for="salary">Quanto ganha no seu emprego atual ?</label>
+            <input type="number" name="salary">
+           </div>
+
+           <!-- 19 Input para Email -->
+            <!-- Caso não seja valido o emial, por exemplo sem o '@' ele não deixara enviar o arquivo 
+             pede para adicionar o '@' e caso o dominio esteja apneas com @ mas sem o dominio tambem ele avisa, mas apenas isso  -->
+
+           <div>
+            <label for="email">Digitel seu email..</label>
+            <input type="email" name="email">
+           </div>
+
+
+
+            <!--20 value  -->
+            <!-- O valor ja vem pré preennchido, usado em momentos que o 
+             dado ja esta definido seja algo padrão -->
+
+            <div>
+                <label for="value">Digite algum valor</label>
+                <input type="text" value="Meu valor é esse" name="value">
+            </div>
+
+
+
+            <!-- 21 disable -->
+            <!--Ele bloqueia input, por exemplo ele colocou que mora nacidade de são paulo, 
+            automaticamente a UF fechara porque ja sabe que SP é o estado de são paulo  -->
+            <!-- a barra de escrita ainda fica visivel paremm não da pra escrever nada nela  -->
+             <!--  por mais que carregue uma informação no caso disso estar no beck end a informação que contem
+               aqui não conta como input, ou seja, mesma que seja fixa precisa de outra maneira de conseguir anexar a informação ao 
+               beck end -->
+            <div>
+                <label for="disable">Tente mudar o valor</label>
+                <input type="text" value="não precisa preencher" disabled name="disable">
+            </div>
+
+
+
+            <!-- 22 atributon placeholder -->
+            <!-- Este atributo serve para quando for colocar um input, por exemplo o nome, ele vai estar 
+             na interface dizenndo digite seu nome, mas, ao clilcar ele some como um lembrete ou sinalizar algo -->
+
+             <div>
+                <label for="currentjob">Qual seu emprego atual ?</label>
+                <input type="text" name="currentjob" placeholder="No que esta tranalhando agora..">
+             </div>
+             
+
+
+
+                <!-- 23 Atributo required -->
+                 <!-- Parecido com o de Email, ele orienta o individuo a preencher algum campo que ficou sem 
+                  preenchimento, pore exemplo não preencheu o cep, ele vai abri uma mensagem pedindo para preencher -->
+                  <div>
+                    <label for="birthday">Digite seu aniversario </label>
+                    <input type="text" name="birthday" required placeholder="Digite sua data de aniversario">
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Botões lado a lado -->
+<div class="botoes">
+  <!-- Botão de limpar -->
+  <input type="reset" value="Limpar">
+  
+  <!-- Botão de enviar -->
+  <input type="submit" value="Enviar">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </form>
+    </div>
+
+      
+
+
+
+
+
+    </form>
+
+
+    
+</body>
+</html>

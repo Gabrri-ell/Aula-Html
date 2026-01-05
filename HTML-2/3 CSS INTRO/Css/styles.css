@@ -236,3 +236,337 @@ sem precisar colocar um a um, padronizando tudo e reduzindo as linhas de codigo*
     coloca metade e ele ja entende que quer manter o padrão para ambas as direções */
 
 }
+
+
+/*usando o border box*/
+
+.without-border-box {
+    background-color: #555; 
+    color: #111;
+    width: 500px;
+    padding: 40px;
+}
+
+.border-box {
+    background-color: #666; 
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* bordas*/
+
+.bordas {
+    border: 5px solid #ae5;
+    padding: 10px;
+}
+
+.bordas2 {
+
+    padding: 15px;
+    border: 10px dotted #444;
+}
+
+.border-left {
+    border-left: #111 solid 15px ;
+    background-color: red;
+    padding: 25px;
+}
+
+.border-bottom {
+    border-bottom: #aaa 15px solid ;
+    background-color: #06581d;
+    padding: 40px;
+}
+
+
+/*arrendondando as bordas, porem esse arredondamento pode ser tambem para cor de fundo*/
+.rounded-p {
+    border: 4px solid blue;
+    background-color: #f74;
+    padding: 15px;
+    color: red;
+    border-radius: 10px;
+}
+
+.rounded-p2 {
+   
+    background-color: #cc5;
+    padding: 15px;
+    color: violet;
+    border-radius: 10px;
+}
+
+/*utiliizando a margem */
+
+.margin {
+    margin: 10px;
+    background-color: rgb(40, 11, 158);
+
+}
+
+.margin-top {
+    margin-top: 20px;
+    background-color: #444;
+    padding: 10px;
+
+}
+/*Neste tipo você coloca a margin de cada um dos lados*/
+
+.margin-shorthand {
+    background-color: #f4f;
+    margin: 15px 10px 15px 5px;
+
+}
+
+
+
+
+.box-model {
+    margin: 20px;
+    border: 15px solid blue;
+    border-radius: 10px;
+    padding: 50px 50px;
+    width: 50px;
+    height: 150px;
+}
+
+/*alinhamento de texto*/
+
+.alinhamento-right {
+    text-align: right;
+}
+
+.texto_centralizado {
+    text-align: center;
+    border: 5px solid violet;
+    width: 300px;
+}
+
+/* text decoration*/
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: #1f1;
+}
+
+/*DEIXANDO O TEXTO MAIUSCULO E MINUSCULO COM LOWER E UPPER  */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/*espaçamento entre as letras em si */
+
+.letter-spacing {
+    letter-spacing: 10px;
+}
+
+/*mudando a fonte das letras*/
+
+.serif {
+    font-family: Georgia;
+
+}
+
+.sans-serifi {
+    font-family: helvetica;
+}
+.monospace {
+    font-style: "Courier New";
+}
+.cursive {
+    font-family: cursive;
+
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/*Font style*/
+
+.italic {
+    font-style: italic;
+
+}
+
+.oblique {
+    font-style: oblique;
+}
+/*font-weight - mudar a espessura da letra*/
+
+.thin,
+.bold,
+.bolder {
+    font-family: helvetica;
+}
+
+.thin {
+font-weight: 100;
+}
+
+.bold {
+font-weight: 800;
+}
+
+.bolder {
+font-weight: 600;
+}
+
+/*FONT SIZE -- tamanho da fonte */
+
+.small {
+    font-size: 8px;
+}
+
+.big {
+    font-size:  78px;
+}
+
+/*Display*/
+
+.inline-box {
+    width: 35px;
+    height: 35px;
+    background-color: #06581d;
+    margin: 10px;
+    display: inline-block;
+}
+.block {
+    margin: 15px;
+    background-color: #1272c1;
+    display: block;
+}
+
+/*escondendo o elemento*/
+
+.invisible {
+    display: none;
+}
+
+/*Static*/
+
+.static {
+    position: static;
+    color: #55a398;
+    width: 100px;
+    height: 100px;
+    background-color: #06581d;
+}
+/*Um possivel problema do relativo é que ao você colocar em algum lugar, podem ter outros
+ elementos e acabe atrapalhar a ver o que esta se passando na tela como se colocasse um em cima do outro*/
+.relative {
+    position: relative;
+    color: #000aaa;
+    width: 100px;
+    height: 100px;
+    background-color: #444fff;
+    top: 20px;
+    left: 20px;
+}
+
+
+.absolut {
+    position: absolute;
+    color: #666;
+    width: 100px;
+    height: 100px;
+    background-color: #000 ;
+   top: 2px;
+   right: 2px;
+    
+}
+
+/*Relative e Conteiner*/
+
+.relative-conteigner{
+     width: 300px;
+     height: 300px;
+    border: solid blue;
+    margin-top: 25px;
+    position: relative;
+}
+
+.absolut1,
+.absolut2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: wheat;
+}
+
+.absolut1 {
+    top: 15px;
+    left: 20px;
+}
+
+.absolut2 {
+    bottom: 5px;
+    right: 5px;
+}
+
+.fixed {
+    width: 300px;
+     height: 300px;
+    border: solid green;
+    margin-top: 25px;
+    position: fixed;
+    background-color: blue;
+    top: 50px;
+    right: 100px;
+}
+
+.stick{
+    width: 30px;
+     height: 30px;
+    border: solid yellow;
+    margin-top: 25px;
+    position: sticky;
+    background-color: rebeccapurple;
+    top: 5px;
+}
+
+.absolut3,
+.absolut4,
+.absolut5 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #123;
+}
+
+
+.absolut3 {
+    top:0px;
+    left: 0px;
+    background-color: #000;
+    z-index: 3;
+}
+.absolut4 {
+ top:10px;
+    left: 10px;
+    background-color: #1f1;
+    
+    z-index: 2;
+
+}
+.absolut5 {
+ top:30px;
+    left: 30px;
+    background-color: burlywood;
+    z-index: 1;
+}

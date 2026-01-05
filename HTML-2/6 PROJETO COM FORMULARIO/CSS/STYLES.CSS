@@ -1,0 +1,127 @@
+/*reseet*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+label,p {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="date"],
+textarea
+{
+    width: 400px;
+    
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+/*page header*/
+
+.header {
+    padding: 20px;
+    height: 100px;
+    background-color: #952e9e;
+}
+
+.header h3 {
+    color: #f0ebf8;
+    margin-top: 0;
+}
+
+.form-conteiner {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+    top: -62px;
+    padding: 30px;
+}
+
+.form-header {
+    border-bottom: solid #952e9e 1px;
+    height: 45px;
+}
+
+.form-header p {
+    color: #952e9e;
+    border-bottom: 2px solid #952e9e;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 45px;
+    height: 45px;
+
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-tittle  {
+    margin-bottom: 15px;
+}
+ 
+.form-body p  {
+    margin-bottom: 25px;
+}
+
+.box-input {
+    margin-bottom: 25px;
+}
+
+.requerid-field {
+    color: red;
+}
+
+.block {
+    display: block;
+}
+
+.optional-box {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.btn-submit {
+    background-color: #952e9e;
+    color: #fdfdfd;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.btn-submit:hover {
+    background-color:#fff ;
+    color: #952e9e;
+    border-color: #952e9e;
+}
